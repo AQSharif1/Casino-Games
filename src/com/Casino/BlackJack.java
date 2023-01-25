@@ -31,7 +31,6 @@ final class BlackJack extends Casino{
 		this.playerScore = (int)(Math.random()*11 +1) + (int)(Math.random()*11 +1);
 		this.players = new ArrayList<>(); // array initialization 
 	}
-	//*************************************FIXXXXXXX*******************************************
 	/**
 	 * Method adds player using string name
 	 * @param name
