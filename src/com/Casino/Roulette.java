@@ -111,10 +111,7 @@ public class Roulette {
 				//rPlayers.get(i);
 				int newBalance = rPlayers.get(i).balance - amount;
 
-				rPlayers.get(i).balance = newBalance;
-
-				//	rPlayers.get(i);
-				//	System.out.println(rPlayers.get(i).getName() +" Bet: " + amount );//+ " \nRemaining cash: " + rPlayers.get(i).balance + " \n");
+				rPlayers.get(i).balance = newBalance;	
 			}
 			rPlayers.get(i).bet = amount;
 			this.bet = amount;
@@ -210,6 +207,9 @@ public class Roulette {
 		}
 	}
 
+	/**
+	 * Write Players into file 
+	 */
 	public void writeOnFile() {
 		try {
 			BufferedWriter write = new BufferedWriter(new FileWriter("BlackJack"));
@@ -224,6 +224,9 @@ public class Roulette {
 		}
 	}
 	
+	/**
+	 * Reads Players from file 
+	 */
 	public void readOnFile() {
 		try {
 			BufferedReader read = new BufferedReader(new FileReader("BlackJack"));
